@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>GDG</title>
+
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/flat-ui.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body ng-app="">
+
+  <md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+      <h1>GDG - AngularJS <small>Na Prática</small></h1>
+    </div>
+  </md-toolbar>
+  <md-content class="md-padding">
+    <md-card>
+      <div class="row">
+        <a class="md-button left" href="1.html">Data binding</a>
+        <a class="md-button right" href="3.html">ng-class</a>
+      </div>
+
+      <h3>2: ng-model</h3>
+      <md-divider></md-divider>
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <h4>Checkbox</h4>
+          <input type="checkbox" ng-model="trueFalse">
+          <br>
+          <div class="well">
+            Checkbox retorna: <strong>{{trueFalse}}</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 column">
+          <div class="col-md-6 column">
+            <h4>Texto</h4>
+            <input class="md-input" placeholder="ex. Tiago Cedrim" ng-model="seuNome"/>
+            <br/>
+            <div class="well">
+                Você digitou : <strong>{{seuNome}}</strong>
+            </div>
+          </div>
+          <div class="col-md-6 column">
+            <h4>Número</h4>
+            <input class="md-input" placeholder="ex. 11" ng-model="seuNumero"/>
+            <br/>
+            <div class="well">
+              O número ao quadrado é : <strong>{{seuNumero * seuNumero}}</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </md-card>
+  </md-content>
+
+<!-- * scripts * -->
+
+<!-- Libs -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+</body>
+</html>

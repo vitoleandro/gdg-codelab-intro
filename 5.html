@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>GDG</title>
+
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/flat-ui.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body ng-app="gdgApp">
+  <md-toolbar class="md-warn">
+    <div class="md-toolbar-tools">
+      <h1>GDG - AngularJS <small>Na Prática</small></h1>
+    </div>
+  </md-toolbar>
+  <md-content class="md-padding" ng-controller="Gdg5Controller">
+    <md-card>
+      <div class="row">
+        <a class="md-button left" href="4.html">Controller</a>
+        <a class="md-button right" href="6.html">ng-repeat</a>
+      </div>
+
+      <h3>5: ng-click</h3>
+      <md-divider></md-divider>
+
+      <div class="row">
+        <div class="col-md-12 column">
+          <div>
+            <img style="-webkit-transform: rotate({{angle}}deg); width: 300px; height: 300px" src="img/angularjs.png">
+          </div>
+          <button class="fui-triangle-left-large" ng-click="volta()"></button>
+          <button class="fui-triangle-right-large" ng-click="vai()"></button>
+        </div>
+      </div>
+    </md-card>
+  </md-content>
+
+  <!-- * scripts * -->
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="bower_components/angular-material/angular-material.min.js"></script>
+  <script src="app/gdg/gdg.controller.js"></script>
+</body>
+</html>

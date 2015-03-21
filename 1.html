@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>GDG</title>
+
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/vendor/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/flat-ui.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RobotoDraft:300,400,500,700,400italic">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body ng-app="">
+<md-toolbar class="md-warn">
+  <div class="md-toolbar-tools">
+    <h1>GDG - AngularJS <small>Na Prática</small></h1>
+  </div>
+</md-toolbar>
+<md-content class="md-padding">
+    <md-card>
+      <div class="row">
+        <span class="pull-left"><a href="1.html"></a></span>
+        <a class="md-button right" href="2.html">2: ng-model</a>
+      </div>
+
+      <h3>1: Data binding</h3>
+      <md-divider></md-divider>
+
+      <div class="row">
+        <div class="col-md-12 column">
+          <div class="col-md-6 column">
+            <h4>Data binding com strings</h4>
+            <code>{{'Hello World'}}</code>
+            <br>
+            <code>{{'Posso ' + 'Concatenar'}}</code>
+          </div>
+          <div class="col-md-6 column">
+            <h4>Data binding com números</h4>
+            <code>{{10 + 10}}</code>
+            <br>
+            <code>{{1 == 1}}</code>
+          </div>
+        </div>
+      </div>
+    </md-card>
+</md-content>
+
+<!-- * scripts * -->
+
+<!-- Libs -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+</body>
+</html>
