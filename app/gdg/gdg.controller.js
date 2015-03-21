@@ -103,7 +103,7 @@
             };
 
             $scope.editar = function(id) {
-                //Procura o ID do jogo passado no parametro e deleta.
+                //Procura o ID do jogo passado no parametro e edita.
                 for(var i in $scope.jogos) {
                     if($scope.jogos[i].id == id) {
                         //Vamos usar o metodo angular.copy() para criar uma copia do objeto original

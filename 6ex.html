@@ -1,0 +1,33 @@
+<html>
+  <header>
+    <title>GDG</title>
+    <link rel="stylesheet" href="style.css"/>
+  </header>
+  <body ng-app="gdgApp">
+
+    <div ng-controller="ListaController">
+      <input ng-model="busca">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Jogo PS4</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="jogo in jogos | orderBy: 'nome' | filter: busca">
+            <td>{{jogo.nome}}</td>
+            <td>{{jogo.preco | currency : 'R$ '}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app/gdg/gdg.controller.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+  <header>
+    <title>GDG</title>
+    <link rel="stylesheet" href="style.css"/>
+  </header>
+  <body ng-app="gdgApp">
+
+    <div ng-controller="Gdg5Controller">
+      <img style="-webkit-transform: rotate({{angle}}deg); width: 300px; height: 300px" src="img/angularjs.png">
+      <button ng-click="vai()">Vai</button>
+      <button ng-click="volta()">Volta</button>
+
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app/gdg/gdg.controller.js"></script>
+
+  </body>
+</html>

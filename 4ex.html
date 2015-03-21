@@ -1,0 +1,19 @@
+<html>
+  <header>
+    <title>GDG</title>
+    <link rel="stylesheet" href="style.css"/>
+  </header>
+  <body ng-app="gdgApp">
+
+    <div ng-controller="Gdg4Controller">
+      <h1>{{contrario()}}</h1>
+      <input ng-model="nome">
+      <h1>{{capsLock()}}</h1>
+      <input ng-model="seuNome">
+    </div>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="app/gdg/gdg.controller.js"></script>
+
+  </body>
+</html>
